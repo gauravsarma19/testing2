@@ -1,13 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Sarma | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f6fa;
+      color: #2f3640;
+    }
+
+    header {
+      background: #273c75;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #192a56;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #40739e;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #00a8ff, #0097e6);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #273c75;
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      text-align: center;
+    }
+
+    .skill {
+      background: #f1f2f6;
+      border-radius: 8px;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #44bd32;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #4cd137;
+    }
+
+    footer {
+      background: #192a56;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-header change
-footer v
 <body>
-   tsting one more for staging
+  <header>
+    <h1>Gaurav Sarma</h1>
+    <p>Azure DevOps Engineer | Cloud | Automation</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Hello, I'm Gaurav 👋</h1>
+    <p>Building solutions with Azure, DevOps, and automation tools.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm a System Administrator turned DevOps Engineer with 7+ years of experience in cloud, automation, and infrastructure management.
+      Passionate about simplifying workflows and deploying secure, scalable solutions.
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill">Azure</div>
+      <div class="skill">DevOps</div>
+      <div class="skill">Jira</div>
+      <div class="skill">Confluence</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Kubernetes</div>
+      <div class="skill">Terraform</div>
+      <div class="skill">GitHub Actions</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Gaurav Sarma | Portfolio Demo</p>
+  </footer>
 </body>
 </html>
